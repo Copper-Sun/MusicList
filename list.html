@@ -13,6 +13,62 @@
 
         <hr width="99.9%">
 
+        <div id="controls">
+            <details>
+                <summary>Graph</summary>
+                <form>
+                    <li>
+                    <ul><strong>X-axis:</strong></ul>
+                        <ul><input type="radio" name="ox" value="artist"> Artist</ul>
+                        <ul><input type="radio" name="ox" value="genre"> Genre</ul>
+                        <ul><input type="radio" name="ox" value="releaseYear"> Release Year</ul>
+                        <ul><input type="radio" name="ox" value="country"> Country</ul>
+                    </li>
+                    <li>
+                    <ul><strong>Result:</strong></ul>
+                        <ul><input type="checkbox" name="result" value="numOfTracks"> Number of Tracks</ul>
+                        <ul><input type="checkbox" name="result" value="avgSongLength"> Average Song Length</ul>
+                        <ul><input type="checkbox" name="result" value="duration"> Duration</ul>
+                    </li>
+                </form>
+            </details>
+            <details>
+                <summary>Filter</summary>
+                <form>
+                    <li>
+                        <ul><label>Artist: <input type="text" name="filter" id="artistName"></label></ul>
+                        <ul><label>Type: <input type="text" name="filter" id="type"></label></ul>
+                        <ul><label>Release Year: 
+                            from <input type="text" name="filter" id="releaseYearFrom"> 
+                            to <input type="text" name="filter" id="releaseYearTo"></label></ul>
+                        <ul><label>Average Song Lenght: 
+                            from <input type="text" name="filter" id="avgSongLengthFrom"> 
+                            to <input type="text" name="filter" id="avgSongLengthTo"></label></ul>
+                    </li>
+                </form>
+            </details>
+            <details>
+                <summary>Sort</summary>
+                <li>
+                    <ul>First level: <select name="sort">
+                        <option value="no"> No </option>
+                        <option value="artist"> Artist </option>
+                        <option value="country"> Country </option>
+                    </select> descending <input type="checkbox" name="descending" value="firstLvl"></ul>
+                    <ul>Second level: <select name="sort">
+                        <option value="no"> No </option>
+                        <option value="artist"> Artist </option>
+                        <option value="country"> Country </option>
+                    </select> descending <input type="checkbox" name="descending" value="secondLvl"></ul>
+                    <ul>Third level: <select name="sort">
+                        <option value="no"> No </option>
+                        <option value="artist"> Artist </option>
+                        <option value="country"> Country </option>
+                    </select> descending <input type="checkbox" name="descending" value="thirdLvl"></ul>
+                </li>
+            </details>
+        </div>
+
         <table border="1" align="center" cellspacing="0" cellpadding="8">
             <tr>
                 <td><strong>Artist</strong></td>
@@ -112,6 +168,138 @@
                 <td>5 min 8 sec</td>
                 <td>1</td>
                 <td>5:08</td>
+            </tr>
+            <tr>
+                <td>Cvmpliant</td>
+                <td>It only hurts</td>
+                <td>Single</td>
+                <td>DnB, breakcore, trance</td>
+                <td>USA</td>
+                <td>2024</td>
+                <td>5 min 13 sec</td>
+                <td>1</td>
+                <td>5:13</td>
+            </tr>
+            <tr>
+                <td>Cvmpliant</td>
+                <td>i want you to know</td>
+                <td>Single</td>
+                <td>DnB, breakcore, trance</td>
+                <td>USA</td>
+                <td>2024</td>
+                <td>4 min 15 sec</td>
+                <td>1</td>
+                <td>4:15</td>
+            </tr>
+            <tr>
+                <td>Cvmpliant</td>
+                <td>VERMILION</td>
+                <td>EP</td>
+                <td>DnB, breakcore, trance</td>
+                <td>USA</td>
+                <td>2025</td>
+                <td>11 min 44 sec</td>
+                <td>4</td>
+                <td>2:55</td>
+            </tr>
+            <tr>
+                <td>svnth</td>
+                <td>i never try</td>
+                <td>single</td>
+                <td>dariacore, electro house, mashup</td>
+                <td>UK</td>
+                <td>2025</td>
+                <td>4 min 14 sec</td>
+                <td>1</td>
+                <td>4:14</td>
+            </tr>
+            <tr>
+                <td>svnth</td>
+                <td>im not scared</td>
+                <td>single</td>
+                <td>dariacore, electro house, mashup</td>
+                <td>UK</td>
+                <td>2025</td>
+                <td>6 min 36 sec</td>
+                <td>1</td>
+                <td>6:36</td>
+            </tr>
+            <tr>
+                <td>svnth</td>
+                <td>bittorent</td>
+                <td>single</td>
+                <td>dariacore, electro house, mashup</td>
+                <td>UK</td>
+                <td>2023</td>
+                <td>2 min 55 sec</td>
+                <td>1</td>
+                <td>2:55</td>
+            </tr>
+            <tr>
+                <td>svnth</td>
+                <td>svnth</td>
+                <td>EP</td>
+                <td>dariacore, electro house, mashup</td>
+                <td>UK</td>
+                <td>2023</td>
+                <td>11 min 41 sec</td>
+                <td>5</td>
+                <td>2:19</td>
+            </tr>
+            <tr>
+                <td>svnth</td>
+                <td>i think we're nearing the end, an album</td>
+                <td>EP</td>
+                <td>dariacore, electro house, mashup</td>
+                <td>UK</td>
+                <td>2023</td>
+                <td>8 min 29 sec</td>
+                <td>4</td>
+                <td>2:07</td>
+            </tr>
+            <tr>
+                <td>svnth</td>
+                <td>not so middle 2, an album</td>
+                <td>EP</td>
+                <td>dariacore, electro house, mashup</td>
+                <td>UK</td>
+                <td>2022</td>
+                <td>14 min 42 sec</td>
+                <td>5</td>
+                <td>2:56</td>
+            </tr>
+            <tr>
+                <td>svnth</td>
+                <td>not so middle, an album</td>
+                <td>EP</td>
+                <td>dariacore, electro house, mashup</td>
+                <td>UK</td>
+                <td>2022</td>
+                <td>16 min 42 sec</td>
+                <td>6</td>
+                <td>2:46</td>
+            </tr>
+            <tr>
+                <td>svnth</td>
+                <td>middle, an album</td>
+                <td>EP</td>
+                <td>dariacore, electro house, mashup</td>
+                <td>UK</td>
+                <td>2022</td>
+                <td>9 min 39 sec</td>
+                <td>5</td>
+                <td>1:52</td>
+            </tr>
+            <tr>
+                <td>svnth</td>
+                <td>early, an album</td>
+                <td>Album</td>
+                <td>dariacore, electro house, mashup</td>
+                <td>UK</td>
+                <td>2022</td>
+                <td>15 min 13 sec</td>
+                <td>7</td>
+                <td>2:09</td>
             </tr>
         </table>
 
