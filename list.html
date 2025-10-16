@@ -17,55 +17,76 @@
             <details>
                 <summary>Graph</summary>
                 <form>
-                    <li>
-                    <ul><strong>X-axis:</strong></ul>
-                        <ul><input type="radio" name="ox" value="artist"> Artist</ul>
-                        <ul><input type="radio" name="ox" value="genre"> Genre</ul>
-                        <ul><input type="radio" name="ox" value="releaseYear"> Release Year</ul>
-                        <ul><input type="radio" name="ox" value="country"> Country</ul>
-                    </li>
-                    <li>
-                    <ul><strong>Result:</strong></ul>
-                        <ul><input type="checkbox" name="result" value="numOfTracks"> Number of Tracks</ul>
-                        <ul><input type="checkbox" name="result" value="avgSongLength"> Average Song Length</ul>
-                        <ul><input type="checkbox" name="result" value="duration"> Duration</ul>
-                    </li>
+                    <ul>
+                    <li><strong>X-axis:</strong></li>
+                        <li><input type="radio" name="ox" value="artist"> Artist</li>
+                        <li><input type="radio" name="ox" value="genre"> Genre</li>
+                        <li><input type="radio" name="ox" value="releaseYear"> Release Year</li>
+                        <li><input type="radio" name="ox" value="country"> Country</li>
+                    </ul>
+                    <ul>
+                    <li><strong>Result:</strong></li>
+                        <li><input type="checkbox" name="result" value="numOfTracks"> Number of Tracks</li>
+                        <li><input type="checkbox" name="result" value="avgSongLength"> Average Song Length</li>
+                        <li><input type="checkbox" name="result" value="duration"> Duration</li>
+                    </ul>
                 </form>
             </details>
             <details>
                 <summary>Filter</summary>
                 <form>
-                    <li>
-                        <ul><label>Artist: <input type="text" name="filter" id="artistName"></label></ul>
-                        <ul><label>Type: <input type="text" name="filter" id="type"></label></ul>
-                        <ul><label>Release Year: 
-                            from <input type="text" name="filter" id="releaseYearFrom"> 
-                            to <input type="text" name="filter" id="releaseYearTo"></label></ul>
-                        <ul><label>Average Song Lenght: 
-                            from <input type="text" name="filter" id="avgSongLengthFrom"> 
-                            to <input type="text" name="filter" id="avgSongLengthTo"></label></ul>
-                    </li>
+                    <ul>
+                        <li><label>Artist: <input type="text" name="filter" id="artistName"></label></li>
+                        <li><label>Type: <input type="text" name="filter" id="type"></label></li>
+                        <li>Release Year: 
+                            <label>from <input type="text" name="filter" id="releaseYearFrom"></label>
+                            <label>to <input type="text" name="filter" id="releaseYearTo"></label></li>
+                        <li>Average Song Lenght: 
+                            <label>from <input type="text" name="filter" id="avgSongLengthFrom"></label> 
+                            <label>to <input type="text" name="filter" id="avgSongLengthTo"></label></li>
+                        </ul>
                 </form>
             </details>
             <details>
                 <summary>Sort</summary>
-                <li>
-                    <ul>First level: <select name="sort">
+                <ul>
+                    <li>First level: <select name="sort">
                         <option value="no"> No </option>
                         <option value="artist"> Artist </option>
+                        <option value="album"> Album </option>
+                        <option value="type"> Type </option>
+                        <option value="genre"> Genre </option>
                         <option value="country"> Country </option>
-                    </select> descending <input type="checkbox" name="descending" value="firstLvl"></ul>
-                    <ul>Second level: <select name="sort">
+                        <option value="releaseYear"> Release Year </option>
+                        <option value="duration"> Duration </option>
+                        <option value="numberOfTracks"> Number of Tracks </option>
+                        <option value="avgSongLength"> Average Song Length </option>
+                    </select> descending <input type="checkbox" name="descending" value="firstLvl"></li>
+                    <li>Second level: <select name="sort">
                         <option value="no"> No </option>
                         <option value="artist"> Artist </option>
+                        <option value="album"> Album </option>
+                        <option value="type"> Type </option>
+                        <option value="genre"> Genre </option>
                         <option value="country"> Country </option>
-                    </select> descending <input type="checkbox" name="descending" value="secondLvl"></ul>
-                    <ul>Third level: <select name="sort">
+                        <option value="releaseYear"> Release Year </option>
+                        <option value="duration"> Duration </option>
+                        <option value="numberOfTracks"> Number of Tracks </option>
+                        <option value="avgSongLength"> Average Song Length </option>
+                    </select> descending <input type="checkbox" name="descending" value="secondLvl"></li>
+                    <li>Third level: <select name="sort">
                         <option value="no"> No </option>
                         <option value="artist"> Artist </option>
+                        <option value="album"> Album </option>
+                        <option value="type"> Type </option>
+                        <option value="genre"> Genre </option>
                         <option value="country"> Country </option>
-                    </select> descending <input type="checkbox" name="descending" value="thirdLvl"></ul>
-                </li>
+                        <option value="releaseYear"> Release Year </option>
+                        <option value="duration"> Duration </option>
+                        <option value="numberOfTracks"> Number of Tracks </option>
+                        <option value="avgSongLength"> Average Song Length </option>
+                    </select> descending <input type="checkbox" name="descending" value="thirdLvl"></li>
+                </ul>
             </details>
         </div>
 
