@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 70px;
+    width: 60%;
+    margin: 0;
+}
+
+p > a {
+    background-color: lightgray;
+    margin: 4px;
+    text-align: center;
+    padding: 1px;
+    text-decoration: none;
+}
+
+p :first-child {background-color: lightgreen;}
+
+.content {
+    display: inline-flex;
+    justify-content: flex-start;
+    gap: 2%;
+    background-color: lightgreen;
+    padding: 2%;
+}
+
+.content :first-of-type b {background-color: lightgreen;}
+.content :first-of-type a {background-color: lightgreen;}
+
+.topic {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 800px) {
+    .content {flex-direction: column;}
+    
+}
