@@ -3,23 +3,54 @@
     <head>
         <meta charset="UTF-8">
         <title>Music List</title>
-        <link rel="stylesheet" href="css/bootstrap.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        <div class="navbar  menu">
-            <p class="navbar-brand">Music List</p>
-            <p><a href="#top">Albums</a></p>
-            <p><a href="list.html">List of albums</a></p>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <div class="navbar sticky-top  menu">
+            <p id="logo" class="navbar-brand">Music List</p>
+            <div class="d-flex justify-content-end">
+                <p><a class="nav-link active" href="#top">Albums</a></p>
+                <p><a href="list.html">List of albums</a></p>
+            </div>
         </div>
 
 
-        <div class="carousel  gallery">
-            <a href="drainingLoveStory.html"><img src="img/DrainingLoveStory.jpg" alt="Draining Love Story" width="150"></a>
-            <img src="img/VERMILION.png" alt="Vermilion" width="150">
-            <img src="img/LostInHerVirtualEyes.jpg" alt="Lost In Her Virtual Eyes" width="150">
-            <img src="img/iNeverTry.png" alt="i never try" width="150">
-            <img src="img/Dariacore.png" alt="dariacore" width="150">
+        <div class="carousel slide" data-bs-ride="carousel" id="gallery">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="gallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="gallery" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="gallery" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="gallery" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="gallery" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="drainingLoveStory.html"><img src="img/DrainingLoveStory.jpg" class="d-block mx-auto" alt="Draining Love Story"></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/VERMILION.png" class="d-block mx-auto" alt="Vermilion">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/LostInHerVirtualEyes.jpg" class="d-block mx-auto" alt="Lost In Her Virtual Eyes">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/iNeverTry.png" class="d-block mx-auto" alt="i never try">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Dariacore.png" class="d-block mx-auto" alt="dariacore">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#gallery" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gallery" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
         <hr width="99.9%">
