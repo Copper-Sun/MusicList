@@ -8,15 +8,27 @@ body {
 
 .navbar {
     background-color: rgb(31, 31, 31);
+    padding: 0;
 }
 
 .navbar .active {
     background-color: rgb(115, 40, 255);
 }
 
-.menu a {
-    padding: 0 20px;
-    border-left: 1px solid white;
+.navbar p {
+    border-left: 2px solid rgb(20, 20, 20);
+    height: 100%;
+    align-content: center;
+}
+
+.navbar p:nth-child(1) {
+    border-left: 0;
+}
+
+.d-flex p {
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
 }
 
 #logo {
