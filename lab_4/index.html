@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta 
+            charset="UTF-8"
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+        >
         <title>Music List</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
@@ -57,65 +61,64 @@
 
         <hr width="99.9%">
 
-        <div class="mainPage">
-            <div id="cynthoni"><p>
-                <h3>Cynthoni</h3>
-                <img src="img/SewerslvtPresentsCynthoniPt1.png" alt="Sewerslvt Presents cynthoni pt1" width="250">
-                <img src="img/SewerslvtPresentsCynthoniPt2.jpg" alt="Sewerslvt Presents cynthoni pt2" width="250">
-                <img src="img/SMOKEITTOTHEBUTT.jpg" alt="smoke it to the butt" width="250">
-                <img src="img/LONGDIVISION.png" alt="long division" width="250">
-                <img src="img/LostInHerVirtualEyes.jpg" alt="Lost In Her Virtual Eyes" width="250">
-                <img src="img/DrainingLoveStory.jpg" alt="draining Love Story" width="250">
-                <div class="artistInfo">Cynthoni is a project initiated in 2024 by Australian artist Jvne, 
-                    better known for their previous project Sewerslvt. Also known as Jvnko, Sewerslvt was 
-                    an electronic, jungle breakcore, drum & bass and ambient music project by Australian 
-                    artist Jvne. Not much is known about their physical appearance nor their voice as they 
-                    usually use anime representations of themselves and TTS voices in personal non-music 
-                    videos, with vocal interventions being very rare in their own tracks.</div>
-            </p></div>
-            
-            <div id="cvmpliant"><p>
-                <h3>Cvmpliant</h3>
-                <img src="img/astrogirl.png" alt="astrogirl" width="250">
-                <img src="img/eva001.png" alt="eva001" width="250">
-                <img src="img/itonlyhurts.png" alt="it only hurts" width="250">
-                <img src="img/iwantyoutoknow.png" alt="i want you to know" width="250">
-                <img src="img/VERMILION.png" alt="vermilion" width="250">
-                <div class="artistInfo">Rising American electronic and drum and bass artist Cvmpliant 
-                    is from Atlanta. Cvmpliant's music is a true depiction of the development of the 
-                    genre, with a futuristic yet raw feel. His music is distinguished by a fusion of 
-                    complex drum and bass beats, throbbing basslines, and ethereal soundscapes that 
-                    take listeners to the depths of the dance floor.
+        <div class="mpSmall row justify-content-evenly">
+            <div class="card rounded-2" style="width: 15%;">
+                <img class="card-img-top rounded-2 p-3" src="img/LostInHerVirtualEyes.jpg" alt="Lost In Her Virtual Eyes" width="250">
+                <h7 class="card-title align-self-center">Cynthoni</h7>
+                <p class="card-text align-self-center">see more <a href="#">...</a></p>
+            </div>
+
+            <div class="card rounded-2" style="width: 15%;">
+                <img class="card-img-top rounded-2 p-3" src="img/iwantyoutoknow.png" alt="i want you to know" width="250">
+                <h7 class="card-title align-self-center">Cvmpliant</h7>
+                <p class="card-text align-self-center">see more <a href="#">...</a></p>
+            </div>
+        </div>
+
+        <div id="mpBig" class="row justify-content-evenly">
+            <div id="cynthoni" class="card rounded-5" style="width: 20%;">
+                <img class="card-img-top rounded-5 p-4" src="img/SewerslvtPresentsCynthoniPt1.png" alt="Sewerslvt Presents cynthoni pt1" width="250">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title align-self-center">Cynthoni</h5>
+                    <p class="card-text">Cynthoni is a project initiated in 2024 by Australian artist Jvne, 
+                    better known for their previous project Sewerslvt.</p>
+                    <a href="#" class="btn btn-primary" style="width: 110px">Read more</a>
                 </div>
-            </p></div>
-            
-            <div id="svnth"><p>
-                <h3>svnth</h3>
-                <img src="img/iNeverTry.png" alt="i never try" width="250">
-                <img src="img/imnotscared.png" alt="im not scared" width="250">
-                <img src="img/bittorent.png" alt="bittorent" width="250">
-                <img src="img/svnth.png" alt="svnth" width="250">
-                <img src="img/ithinkwenearingtheend.png" alt="i think we nearing the end"  width="250">
-                <img src="img/notsomiddle2.png" alt="not so middle 2" width="250">
-                <img src="img/notsomiddle.png" alt="not so middle" width="250">
-                <img src="img/middle.png" alt="middle" width="250">
-                <img src="img/early.png" alt="early" width="250">
-                <div class="artistInfo">
-                    svnth is sxth sns side project from United Kingdom. Their music is an experimental 
-                    combination of dariacore, mashup, electro house and trap genres. 
+            </div>
+
+            <div id="cvmpliant" class="card rounded-5" style="width: 20%;">
+                <img class="card-img-top rounded-5 p-4" src="img/itonlyhurts.png" alt="it only hurts" width="250">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title align-self-center">Cvmpliant</h5>
+                    <p class="card-text">Rising American electronic and drum and bass artist Cvmpliant 
+                    is from Atlanta.</p>
+                    <a href="#" class="btn btn-primary" style="width: 110px">Read more</a>
                 </div>
-            </p></div>
-            
-            <div id="leroy"><p>
-                <h3>leroy/c0ncernn</h3>
-                <img src="img/Dariacore.png" alt="dariacore" width="250">
-                <img src="img/dariacore2.png" alt="dariacore 2" width="250">
-                <img src="img/dariacore3.png" alt="dariacore 3" width="250">
-                <div class="artistInfo">
-                    leroy, also known as c0ncernn, is a side project by the artist Jane Remover, 
-                    where they make energetic mashup music under the genre dariacore.
+            </div>
+
+            <div id="svnth" class="card rounded-5" style="width: 20%;">
+                <img class="card-img-top rounded-5 p-4" src="img/iNeverTry.png" alt="i never try" width="250">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title align-self-center">Svnth</h5>
+                    <p class="card-text">Svnth is sxth sns side project from United Kingdom. Their music is an experimental 
+                    combination of dariacore, mashup, electro house and trap genres.</p>
+                    <a href="#" class="btn btn-primary" style="width: 110px">Read more</a>
                 </div>
-            </p></div>
+            </div>
+        </div>
+        
+        <div class="mpSmall row justify-content-evenly">
+            <div class="card rounded-2" style="width: 15%;">
+                <img class="card-img-top rounded-2 p-3" src="img/iwantyoutoknow.png" alt="i want you to know" width="250">
+                <h7 class="card-title align-self-center">Cvmpliant</h7>
+                <p class="card-text align-self-center">see more <a href="#">...</a></p>
+            </div>
+
+            <div class="card rounded-2" style="width: 15%;">
+                <img class="card-img-top rounded-2 p-3" src="img/LONGDIVISION.png" alt="long division" width="250">
+                <h7 class="card-title align-self-center">Cynthoni</h7>
+                <p class="card-text align-self-center">see more <a href="#">...</a></p>
+            </div>
         </div>
 
         <hr width="99.9%">
